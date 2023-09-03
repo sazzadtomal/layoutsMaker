@@ -1,8 +1,8 @@
-import Container from "./component/dashLayout_2/Container";
+import Container from "./component/Container/Container";
 import Navbar from "./component/Navbar/Navbar";
 import Footer from "./component/Footer/Footer";
 import Products from "./component/Products/Products"
-import Home from "./component/Home/Home";
+
 function App() {
   return (
        

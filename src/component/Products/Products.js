@@ -1,20 +1,44 @@
 import React from 'react'
 import Header from '../Header/Header'
+import ProductCard from  "../ProductCard/ProductCard"
+import FilterHolder from "../Filter/FilterHolder"
+import FilterItem from "../FilterItem/FilterItem"
 
-const Products = () => {
+
+
+const ProductsWithFilter = () => {
   return (
-    <section className='flex h-full w-full'>
-         <section className='xl:w-1/6 w-1/3 bg-yellow-100'>Filter</section>
-          <main className='bg-green-200 flex flex-col flex-grow' >
+    <section className='flex h-full w-full gap-2 '>
+          <FilterHolder>
+             <FilterItem/>
+      </FilterHolder>
+    <div className='h-full w-0.5 bg-gray-200'></div>
+          
+    <main className='flex flex-col w-full mt-4' >
            <Header/>
-           <div className='flex flex-wrap p-4'>
-              <div className='h-48 basis-1/3 p-2 pb-4 border '>
-                 <div className='w-full h-full bg-white'></div>
-              </div>
-         </div>
+           <div className='flex flex-wrap p-4 mt-4'>        
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+           </div>
          </main>
     </section>
   )
 }
 
-export default Products
+export default ProductsWithFilter

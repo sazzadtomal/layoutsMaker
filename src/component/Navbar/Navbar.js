@@ -4,7 +4,7 @@
 
 const Navbar = () => {
   return (
-    <div className="w-full shrink-0 h-12 bg-gray-700" ></div>
+    <div className="w-full shrink-0 h-16 bg-gray-700" ></div>
   )
 }
 
